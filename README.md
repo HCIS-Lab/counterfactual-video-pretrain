@@ -6,8 +6,8 @@ Official code of [What Changed and What Could Have Changed? State-Change Counter
 
 ## TODO
 
-- [ ] Error detection on EgoPER
-- [ ] Temporal Action Segmentation on EgoPER
+- [v] Error detection on EgoPER
+- [v] Temporal Action Segmentation on EgoPER
 
 ## Installation
 
@@ -112,9 +112,8 @@ python eval.py -- result_dir path_to_results --split 1/2/3/4/0
 
 Please refer to [ASFormer](https://github.com/ChinaYi/ASFormer) for more details.
 
-### Temporal Action Segmentation (EgoPER)
-
-### Error Detection
+### EgoPER (Action Segmentation and Error Detection)
+The detailed instruction is in [EgoPER](EgoPER). This has modified EgoPER scripts from the [original](https://github.com/robert80203/EgoPER_official).
 
 ### AE2 Action Phase Recognition
 
