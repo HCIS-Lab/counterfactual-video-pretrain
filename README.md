@@ -36,7 +36,7 @@ EpicKitchen & Charades-Ego: Please refer to [EgoVLP](https://github.com/showlab/
 
 AE2: Please pre-extract frame features for this task, following [Align-Ego-Exo](https://github.com/zihuixue/AlignEgoExo) for the data split.
 
-## Generate State Changes and Their Counterfactuals with Llama
+## Generate State Changes and Their Counterfactuals with [Llama](llama_script)
 
 Please refer to [Llama 3](https://github.com/meta-llama/llama3) for model weights and installation instructions. We use the following scripts to generate state change and counterfactual descriptions for the entire Ego4D dataset. Please note that you will need to modify the paths to Ego4D's annotation files in the scripts.
 
@@ -50,7 +50,7 @@ cd llama_script
 python video_level_cf.py
 ```
 
-## Generate Text Features with FLAVA
+## Generate Text Features with [FLAVA](language_extraction)
 
 To extract clip-level narration features, please run
 
@@ -110,16 +110,16 @@ python main.py --action eval --feature cf --dataset gtea --split 1/2/3/4
 python eval.py -- result_dir path_to_results --split 1/2/3/4/0
 ```
 
-Please refer to [ASFormer](https://github.com/ChinaYi/ASFormer) for more details.
+Please refer to [ASFormer](ASFormer) for more details.
 
 ### Temporal Action Segmentation (EgoPER)
 
 ### Error Detection
 
-### AE2 Action Phase Recognition
+### [AE2](AE2) Action Phase Recognition
 
 ```python
-python AE2/AE2_phase_cls.py
+python AE2/evaluation/AE2_phase_cls.py
 ```
 
 ## Zero-Shot Downstream Task Testing
@@ -136,10 +136,10 @@ python downstream_script/test_epic.py
 python downstream_script/test_charades.py
 ```
 
-### AE2 Zero-Shot Action Phase Frame Retrieval
+### [AE2](AE2) Zero-Shot Action Phase Frame Retrieval
 
 ```python
-python AE2/AE2_frame_retrieval.py
+python AE2/evaluation/AE2_frame_retrieval.py
 ```
 
 ## Citation
