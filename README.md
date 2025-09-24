@@ -113,7 +113,17 @@ python eval.py -- result_dir path_to_results --split 1/2/3/4/0
 Please refer to [ASFormer](https://github.com/ChinaYi/ASFormer) for more details.
 
 ### EgoPER (Action Segmentation and Error Detection)
-The detailed instruction is in [EgoPER](EgoPER). This has modified EgoPER scripts from the [original](https://github.com/robert80203/EgoPER_official).
+The detailed instruction is in [EgoPER](https://github.com/juhha/EgoPER/tree/9af3ac2383653cce360d643e71b4d29d23c04667) - this has modified EgoPER scripts from the [original](https://github.com/robert80203/EgoPER_official).
+
+To use this modified scripts, submodules should be loaded:
+1. If you clone this repo without submodule, follow:
+```
+git submodule update --init --recursive
+```
+2. To clone with the submodule, follow:
+```
+git clone --recurse-submodules git@github.com:HCIS-Lab/counterfactual-video-pretrain.git
+```
 
 ### AE2 Action Phase Recognition
 
