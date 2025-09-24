@@ -1,0 +1,3 @@
+[submodule "EgoPER"]
+	path = EgoPER
+	url = https://github.com/juhha/EgoPER
